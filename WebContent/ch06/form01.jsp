@@ -8,7 +8,8 @@
 </head>
 <body>
 	<h3>회원 가입</h3>
-	<form action="form04_process.jsp" name="member" method="post">
+	<form action="form06_process.jsp" name="member" method="post">
+	<!-- <form action="form04_process.jsp" name="member" method="post"> -->
 		<p> 아이디 : <input type="text" name="id"> <input type="button" value="아이디 중복 검사">
 		<p> 비밀번호 : <input type= "password" name="passwd">
 		<p> 이름 : <input type="text" name="name">	
