@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h3>회원 가입</h3>
-	<form action="#" name="member" method="post">
+	<form action="form04_process.jsp" name="member" method="post">
 		<p> 아이디 : <input type="text" name="id"> <input type="button" value="아이디 중복 검사">
 		<p> 비밀번호 : <input type= "password" name="passwd">
 		<p> 이름 : <input type="text" name="name">	
@@ -21,11 +21,13 @@
 					</select><!-- <input type="text" maxlength="4" size="4" name="phone1"> --> -
 		<input type="text" maxlength="4" size="4" name="phone2"> -
 		<input type="text" maxlength="4" size="4" name="phone3">
-		<p> 성별 : <input type="radio" name="sex" value="남성" checked>남성
-				  <input type="radio" name="sex" value="여성">여성
-		<p> 취미 : 독서 <input type="checkbox" name="hobby1" checked>
-				  운동 <input type="checkbox" name="hobby2" >
-				  영화 <input type="checkbox" name="hobby3" >
+		<p> 성별 : <input type="radio" name="sex" id="male" value="남성" checked><label for="male">남성</label>
+				  <input type="radio" name="sex" id="female" value="여성"><label for="female">여성</label>
+		<p> 취미 : 독서 <input type="checkbox" name="hobby" value="독서" checked>
+				  운동 <input type="checkbox" name="hobby" value="운동">
+				  영화 <input type="checkbox" name="hobby" value="영화">
+		<br>
+		<textarea name="comment" cols=30 rows=5 placeholder="가입 인사를 입력해주세요"></textarea><br>
 		<p><input type="submit" value="가입하기">
 		   <input type="reset" value="다시쓰기">
 	
