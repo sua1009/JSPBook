@@ -25,11 +25,12 @@
 		while(paramNames.hasMoreElements()){
 			/* 배열에 저장된 데이터를 하나 출력 */
 			String name= (String)paramNames.nextElement();
-			out.println("<tr><td>" + name + "</td>\n");
+			out.print("<tr><td>" + name + "</td>\n");
 			/* 출력된 name을 가직 request 객체에서 값을 하나 출력함  */
 			String paramValue= request.getParameter(name);
 			out.println("<td>" + paramValue + "</td></tr>\n");
 			}
+		
 		%>
 	</table>
 </body>
