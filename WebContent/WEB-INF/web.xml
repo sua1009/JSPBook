@@ -16,6 +16,6 @@
 	</error-page>
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
-		<location>/ch11/errorCode_error.jsp</location>
+		<location>/ch11/exceptionType_error.jsp</location>
 	</error-page>
 </web-app>
