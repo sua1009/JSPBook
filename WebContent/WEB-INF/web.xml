@@ -57,35 +57,6 @@
      <filter-name>Filter02_2</filter-name>
      <url-pattern>/ch12/filter02_process.jsp</url-pattern>
   </filter-mapping>
-	<!-- <filter>
-		<filter-name>filter02</filter-name>
-		<filter-class>ch12.com.filter.InitParamFilter</filter-class>
-		<init-param>
-			<param-name>param1</param-name>
-			<param-value>admin1</param-value>
-		</init-param>
-		<init-param>
-			<param-name>param2</param-name>
-			<param-value>1234</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>filter02</filter-name>
-		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
-	</filter-mapping>
-	
-	<filter>
-		<filter-name>Filter02_2</filter-name>
-		<filter-class>ch12.com.filter.LogFileFilter</filter-class>
-		<init-param>
-			<param-name>filename</param-name>
-			<param-value>c:\\logs\\moniter.log</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>Filter02_2</filter-name>
-		<url-pattern>/ch12/filter02_process.jsp</url-pattern>
-	</filter-mapping> -->
 	
 	
 </web-app>
