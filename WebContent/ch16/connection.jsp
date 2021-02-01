@@ -25,13 +25,16 @@
 			String userId = "springb";
 			String userPw = "asdf1234";
 			
+			/* jdbc driver 클래스 확인 */
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			/* getConnection() 메서드가 실제 데이터 베이스와 연결을 진행함 */
 			conn = DriverManager.getConnection(url, userId, userPw);
 			out.println("데이터베이스 연결이 성공했습니다.");
 		}catch(SQLException ex){
 			out.println("데이터베이스 연결이 실패했습니다. <br>");
 			out.println("SQLException : " + ex.getMessage());
 		}finally{
+			/* 데이터 베이스 접속은 가비지 컬렉터가 자동으로 메모리 회수를 할 수 없기 때문에 finally를 이용해서 connection을 닫아줘야함 */
 			if (conn != null)
 				conn.close();
 			
