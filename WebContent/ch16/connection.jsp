@@ -21,7 +21,7 @@
 			/* employees : 사용할 데이터 베이스 이름 */
 			/* serverTimezone : 서버 시간 지역 구분 */
 			/* characterEncoding : 문자셋 */
-			String url = "jdbc:mysql://localhost:3306/employees?serverTimezone=UTC&characterEncoding=utf-8";
+			String url = "jdbc:mysql://localhost:3306/jspbookdb?serverTimezone=UTC&characterEncoding=utf-8";
 			String userId = "springb";
 			String userPw = "asdf1234";
 			
